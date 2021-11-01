@@ -2,7 +2,7 @@
 
 Another [tetromino][tetromino-wikipedia] falling block game implementation.
 
-Remember the hidden tetromino game in Emacs using the `M-x tetris` command? I just wanted the same kind of useful tool with Atom.
+Remember the hidden tetromino game in Emacs using the `M-x tetris` command? I just wanted the same kind of useful tool with VSCode.
 
 ![TetrominoDemo](https://raw.githubusercontent.com/vhiribarren/atom-tetromino/master/materials/tetromino.gif)
 
@@ -14,10 +14,10 @@ The current commands to play the game are:
 
 - `left`: move block to left
 - `right`: move block to right
-- `bottom`: accelerate drop of block
+- `bottom`: accelerate drop of block, press again to stop the fall
 - `up`: rotate block to right
 - `space`: rotate block to right
-- `alt`: rotate block to left
+- `x`: rotate block to left
 - `p`: pause
 
 ## Contributions
