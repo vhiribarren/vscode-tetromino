@@ -1,24 +1,70 @@
 {
-  "name": "tetromino",
-  "main": "./lib/tetromino",
-  "version": "0.6.0",
-  "author": "Vincent Hiribarren",
-  "description": "Another falling block game to waste time on Atom",
-  "keywords": [
-    "tetromino",
-    "tetris",
-    "game",
-    "fun",
-    "block",
-    "falling"
-  ],
-  "activationCommands": {
-    "atom-workspace": "tetromino:play"
-  },
-  "repository": "https://github.com/vhiribarren/atom-tetromino",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {}
+	"author": "Vincent Hiribarren",
+    "publisher": "vhiribarren",
+    "name": "tetromino",
+	"description": "Another falling block game to waste time on VSCode",
+	"keywords": [
+	  "tetromino",
+	  "tetris",
+	  "game",
+	  "fun",
+	  "block",
+	  "falling"
+	],
+	"repository": "https://github.com/vhiribarren/atom-tetromino",
+	"license": "MIT",
+    "version": "1.0.0",
+    "main": "./lib/extension.js",
+
+    "engines": {
+		"vscode": "^1.34.0"
+	},
+    "activationEvents": [
+		"onCommand:tetromino.play"
+	],
+    "contributes": {
+		"commands": [
+			{
+				"command": "tetromino.play",
+				"title": "Tetromino"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "tetromino.command.left",
+				"key": "left",
+				"when": "focusedView == '' && tetromino.panel.active"
+			},
+			{
+				"command": "tetromino.command.right",
+				"key": "right",
+				"when": "focusedView == '' && tetromino.panel.active"
+			},
+			{
+				"command": "tetromino.command.rotateRight",
+				"key": "up",
+				"when": "focusedView == '' && tetromino.panel.active"
+			},
+			{
+				"command": "tetromino.command.down",
+				"key": "down",
+				"when": "focusedView == '' && tetromino.panel.active"
+			},
+			{
+				"command": "tetromino.command.rotateRight",
+				"key": "space",
+				"when": "focusedView == '' && tetromino.panel.active"
+			},
+			{
+				"command": "tetromino.command.rotateLeft",
+				"key": "x",
+				"when": "focusedView == '' && tetromino.panel.active"
+			},
+			{
+				"command": "tetromino.command.pause",
+				"key": "p",
+				"when": "focusedView == '' && tetromino.panel.active"
+			}
+		]
+	}
 }
