@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.0.0 - 2021-11-02
+### Added
+- Auto-pause when tab is hidden
+### Modified
+- Port of the app to be used with VSCode
+- Change the rotation and fall button
+- Makes blocks more plain
+
 ## 0.6.0 - 2016-01-16
 ### Added
 - Best score for lines is stored and displayed
