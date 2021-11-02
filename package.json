@@ -1,70 +1,73 @@
 {
-	"author": "Vincent Hiribarren",
-    "publisher": "vhiribarren",
-    "name": "tetromino",
-	"description": "Another falling block game to waste time on VSCode",
-	"keywords": [
-	  "tetromino",
-	  "tetris",
-	  "game",
-	  "fun",
-	  "block",
-	  "falling"
-	],
-	"repository": "https://github.com/vhiribarren/atom-tetromino",
-	"license": "MIT",
-    "version": "1.0.0",
-    "main": "./lib/extension.js",
-
-    "engines": {
-		"vscode": "^1.34.0"
-	},
-    "activationEvents": [
-		"onCommand:tetromino.play"
-	],
-    "contributes": {
-		"commands": [
-			{
-				"command": "tetromino.play",
-				"title": "Tetromino"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "tetromino.command.left",
-				"key": "left",
-				"when": "focusedView == '' && tetromino.panel.active"
-			},
-			{
-				"command": "tetromino.command.right",
-				"key": "right",
-				"when": "focusedView == '' && tetromino.panel.active"
-			},
-			{
-				"command": "tetromino.command.rotateRight",
-				"key": "up",
-				"when": "focusedView == '' && tetromino.panel.active"
-			},
-			{
-				"command": "tetromino.command.down",
-				"key": "down",
-				"when": "focusedView == '' && tetromino.panel.active"
-			},
-			{
-				"command": "tetromino.command.rotateRight",
-				"key": "space",
-				"when": "focusedView == '' && tetromino.panel.active"
-			},
-			{
-				"command": "tetromino.command.rotateLeft",
-				"key": "x",
-				"when": "focusedView == '' && tetromino.panel.active"
-			},
-			{
-				"command": "tetromino.command.pause",
-				"key": "p",
-				"when": "focusedView == '' && tetromino.panel.active"
-			}
-		]
-	}
+  "author": "Vincent Hiribarren",
+  "publisher": "vhiribarren",
+  "name": "tetromino",
+  "displayName": "Tetromino",
+  "description": "Another falling block game to waste time on VSCode",
+  "categories": ["Other"],
+  "keywords": [
+    "tetromino",
+    "tetris",
+    "game",
+    "fun",
+    "block",
+    "falling"
+  ],
+  "homepage": "https://github.com/vhiribarren/vscode-tetromino",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vhiribarren/vscode-tetromino.git"
+  },
+  "license": "MIT",
+  "icon": "materials/icon.png",
+  "version": "1.0.0",
+  "main": "./lib/extension.js",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "activationEvents": [
+    "onCommand:tetromino.play"
+  ],
+  "contributes": {
+    "commands": [{
+      "command": "tetromino.play",
+      "title": "Tetromino"
+    }],
+    "keybindings": [{
+        "command": "tetromino.command.left",
+        "key": "left",
+        "when": "focusedView == '' && tetromino.panel.active"
+      },
+      {
+        "command": "tetromino.command.right",
+        "key": "right",
+        "when": "focusedView == '' && tetromino.panel.active"
+      },
+      {
+        "command": "tetromino.command.rotateRight",
+        "key": "up",
+        "when": "focusedView == '' && tetromino.panel.active"
+      },
+      {
+        "command": "tetromino.command.down",
+        "key": "down",
+        "when": "focusedView == '' && tetromino.panel.active"
+      },
+      {
+        "command": "tetromino.command.rotateRight",
+        "key": "space",
+        "when": "focusedView == '' && tetromino.panel.active"
+      },
+      {
+        "command": "tetromino.command.rotateLeft",
+        "key": "x",
+        "when": "focusedView == '' && tetromino.panel.active"
+      },
+      {
+        "command": "tetromino.command.pause",
+        "key": "p",
+        "when": "focusedView == '' && tetromino.panel.active"
+      }
+    ]
+  }
 }
