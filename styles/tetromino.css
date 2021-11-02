@@ -88,32 +88,39 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 .tetromino-shape-i {
     color: #FF0000;
+    background-color: #FF0000;
     font-weight: bold;
 }
 
 .tetromino-shape-o {
     color: #00FF00;
+    background-color: #00FF00;
     font-weight: bold;
 }
 
 .tetromino-shape-t {
     color: #0000FF;
+    background-color: #0000FF;
     font-weight: bold;
 }
 
 .tetromino-shape-l {
     color: #FF00FF;
+    background-color: #FF00FF;
     font-weight: bold;
 }
 .tetromino-shape-j {
     color: #00FFFF;
+    background-color: #00FFFF;
     font-weight: bold;
 }
 .tetromino-shape-s {
     color: #FFFF00;
+    background-color: #FFFF00;
     font-weight: bold;
 }
 .tetromino-shape-z {
     color: #FFFFFF;
+    background-color: #FFFFFF;
     font-weight: bold;
 }
