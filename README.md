@@ -22,7 +22,7 @@ The current commands to play the game are:
 - `x`: rotate block to left
 - `p`: pause
 
-## Implementation choivces and limitations
+## Implementation choices and limitations
 
 This game was originally created for Atom.
 
